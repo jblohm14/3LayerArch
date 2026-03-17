@@ -8,10 +8,13 @@ class UserStorage:
 
     def get(self, user_id: int) -> User:
         raise NotImplementedError()
-    
+
+    def get_all(self) -> [User]:
+        raise NotImplementedError()
+
     def delete(self, user_id: int):
         raise NotImplementedError()
-    
+
     def update(self, user: User):
         raise NotImplementedError()
 
